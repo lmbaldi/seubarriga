@@ -1,29 +1,35 @@
+// criando o arquivo package.json e a pasta node_modules
+- y instala tudo sem fazer perguntas 
  $ npm init -y
-- y instala tudo sem fazer perguntas e cria a pasta node_modules e o arquivo package.json
 
+//instala o eslnit somente no projeto, evitar instalar dependencias do projeto de maneira global
 ./node_modules/.bin/eslint --init
-instala o eslit somente no projeto, evitar instalar dependencias do projeto de maneira global
 
+//configura o eslint para rodar somente nessas pastas
 ./node_modules/.bin/eslint src/** test/** --fix
-configura o eslit para rodar somente nessas pastas
 
-$ npm i -D jest@23.6.0 -E 
-@ espefica versao
--E nao permite a atualizacao da versao
+//instalando o jest para testar a aplicação 
+@ espefica a versão
+-E nao permite a atualização da versão
 -D dependencia da aplicacao
+$ npm i -D jest@23.6.0 -E 
 
+//habilitando o jest no projeto
 ./node_modules/.bin/jest
-executa o teste so no projeto
 
+//executando o teste
 $npm test
-//executa o teste
 
+//instalação do supertest para simular requisições http
+//para executar os testes http 
 $ npm i -D -E supertest@3.3.0
-//para executar o testes http 
 
-$ npm i -S -E express@4.16.4
-// -S dependencia do projeto
 // criar servidor para teste
+// -S dependencia do projeto
+$ npm i -S -E express@4.16.4
 
-$ node src/server.js
 // start server
+$ node src/server.js
+
+//habilitando o secure mode para detectar se existe alguma alteração e rodar os testes
+$ npm run secure-mode
