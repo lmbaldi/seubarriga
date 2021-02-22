@@ -1,11 +1,6 @@
-const express = require('express');
-
-const app = express();
-
-//configuracao para responder o recurso /
-app.get('/', (req, res) => {
-    res.status(200).send();
-});
+const app = require('./app');
 
 //start server
-app.listen(3001);
+app.listen(3001, () => {
+    console.log('The application is working');
+});
