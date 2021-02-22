@@ -36,3 +36,6 @@ $ npm run secure-mode
 
 //converter o body de uma requisição para vários formatos(neste caso json)
 $ npm i -S -E body-parser@1.19.0
+
+//fazer o gerenciamento do carregamento de todos os arquivos da aplicação com o consignment
+$ npm i -S -E consign@0.1.6
