@@ -10,6 +10,7 @@ configura o eslit para rodar somente nessas pastas
 $ npm i -D jest@23.6.0 -E 
 @ espefica versao
 -E nao permite a atualizacao da versao
+-D dependencia da aplicacao
 
 ./node_modules/.bin/jest
 executa o teste so no projeto
@@ -18,4 +19,11 @@ $npm test
 //executa o teste
 
 $ npm i -D -E supertest@3.3.0
-//para executar o testes http
+//para executar o testes http 
+
+$ npm i -S -E express@4.16.4
+// -S dependencia do projeto
+// criar servidor para teste
+
+$ node src/server.js
+// start server
