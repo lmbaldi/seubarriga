@@ -33,3 +33,6 @@ $ node src/server.js
 
 //habilitando o secure mode para detectar se existe alguma alteração e rodar os testes
 $ npm run secure-mode
+
+//
+$ npm i -S -E body-parser@1.18.3
