@@ -34,5 +34,5 @@ $ node src/server.js
 //habilitando o secure mode para detectar se existe alguma alteração e rodar os testes
 $ npm run secure-mode
 
-//
-$ npm i -S -E body-parser@1.18.3
+//converter o body de uma requisição para vários formatos(neste caso json)
+$ npm i -S -E body-parser@1.19.0
