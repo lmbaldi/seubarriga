@@ -17,4 +17,5 @@ test('Devo saber trabalhar com objetos', () =>{
 
     const obj2 = { name: 'John', email: 'joh@email.com'};
     expect(obj).toEqual(obj2);
+    
 });

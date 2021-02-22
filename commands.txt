@@ -1,4 +1,4 @@
-npm init -y
+ $ npm init -y
 - y instala tudo sem fazer perguntas e cria a pasta node_modules e o arquivo package.json
 
 ./node_modules/.bin/eslint --init
@@ -7,9 +7,15 @@ instala o eslit somente no projeto, evitar instalar dependencias do projeto de m
 ./node_modules/.bin/eslint src/** test/** --fix
 configura o eslit para rodar somente nessas pastas
 
-npm i -D jest@23.6.0 -E 
+$ npm i -D jest@23.6.0 -E 
 @ espefica versao
 -E nao permite a atualizacao da versao
 
 ./node_modules/.bin/jest
 executa o teste so no projeto
+
+$npm test
+//executa o teste
+
+$ npm i -D -E supertest@3.3.0
+//para executar o testes http
